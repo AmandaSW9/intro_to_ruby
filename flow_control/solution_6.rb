@@ -6,7 +6,7 @@ Then, type the expressions into irb to see the results.
 (32 * 4) >= "129"
 # error
 847 == '874'
-# error
+# false
 '847' < '846'
 # false
 '847' > '846'
