@@ -4,9 +4,7 @@ performs an action, and only stops when the user types "STOP".
 Each loop can get info from the user.
 =end
 
-puts "What should we do?"
-x = gets.chomp
-
+x = ''
 while x != "STOP" do
   puts "Don't STOP!"
   puts "What next?"
