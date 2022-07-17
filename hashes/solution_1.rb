@@ -9,3 +9,13 @@ family = {  uncles: ["bob", "joe", "steve"],
             aunts: ["mary","sally","susan"]
           }
 
+immediate_family = []
+
+family.select do |k,v| 
+  if (k == :sisters) || (k == :brothers)
+    immediate_family << v.to_a
+    immediate_family.flatten!
+  end
+end
+
+puts immediate_family
